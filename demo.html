@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo播放器</title>
+  <link rel="stylesheet" href="music1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Demo播放器</h1>
+    <div class="player">
+      <audio id="audioPlayer" controls>
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="controls">
+        <button id="playPauseBtn">开始/暂停</button>
+        <button id="skipForwardBtn">快进十秒</button>
+      </div>
+    </div>
+    <div class="demo列表">
+      <h2>Playlist</h2>
+      <input type="text" id="searchInput" placeholder="Search songs...">
+      <button id="searchSubmit">Search</button>
+      <select id="songSelector">
+        <option value="Demo\Demo 1.mp3">Demo 1</option>
+        <option value="Demo\Demo 2.mp3">Demo 2</option>
+        <option value="Demo\Demo 3.mp3">Demo 3</option>
+        <option value="Demo\Demo 4.mp3">Demo 4</option>
+        <option value="Demo\Demo 5.mp3">Demo 5</option>
+        <option value="Demo\Demo 6.mp3">Demo 6</option>
+    </div>
+    </div>
+  </div>
+  <script src="demo.js"></script>
+</body>
+</html>
